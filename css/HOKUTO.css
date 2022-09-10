@@ -1,0 +1,654 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family:"游明朝","游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    color: #fff;
+}
+ video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* グローバルナビ */
+#wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    background: rgba(33,33,33,.9);
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2
+}
+#wrapper nav ul li {
+    padding: 20px 28px;
+    list-style: none;
+}
+#wrapper nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+#wrapper .btn-gnavi {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+}
+#wrapper .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms
+}
+#wrapper .btn-gnavi span:nth-child(1) {
+    top: 0
+}
+#wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px
+}
+#wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px
+}
+#wrapper .btn-gnavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+#wrapper .btn-gnavi.open span {
+    background: #fff
+}
+#wrapper .btn-gnavi.open span:nth-child(1) {
+    width: 24px;
+    -webkit-transform: translate(-7px,17px) rotate(45deg);
+    transform: translate(-7px,17px) rotate(45deg)
+}
+#wrapper .btn-gnavi.open span:nth-child(3) {
+    width: 24px;
+    -webkit-transform: translate(-7px,-17px) rotate(-45deg);
+    transform: translate(-7px,-17px) rotate(-45deg)
+}
+
+
+
+#section02,#section03,#section04,#section05,
+#section06{
+    margin-top: 20rem;
+}
+.section-title{
+   text-align: center;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+/*header*/
+.header{
+    position: relative;
+    top: 0%;
+    height: 80px;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-0%,-50%);
+    width: 4%;
+}
+/*section01*/
+#section01{
+  position: relative;
+  height: 800px;
+}
+#section01 h1{
+    position: absolute;   
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-15%);
+    font-size: 6rem; 
+    width: 100%;
+    text-align: center;
+}
+#section01 h2{
+    position: absolute;   
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    font-size: 4rem;   
+    width: 100%;
+    text-align: center;
+}
+img[src="images/slider/IMG_00.jpg"]{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    border-radius: 50%;
+    width: 15%;
+    box-shadow: 5px 5px 10px  black;
+}
+/*section02*/
+#section02{
+    position: relative;
+    height: 500px;
+}
+#ABOUT-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 5rem;
+    list-style: none;
+}
+/*sectin03*/
+#section03{
+    position: relative;
+    height: 500px;
+}
+.Research-Activity-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    width: 80%;
+    font-size: 1.8rem;
+}
+.food-professor{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    width:15%;
+}
+/*section04*/
+#section04{
+    position: relative;
+    height: 700px;
+}
+.skill-point{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.skill-point li{
+    font-size: 2rem;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
+}
+/*section05*/
+#section05{
+    height: 1800px;
+}
+.works-card1{
+    display: flex;
+    width: 100%;
+}
+.works-card2{
+    display: flex;
+    width: 100%;
+}
+.works-card3{
+    display: flex;
+    width: 100%;
+}
+.works-card4{
+    display: flex;
+    width: 100%;
+}
+.works-card-sort{
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+.works-card-sort{
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+.works-title{
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.works-content{
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+}
+.image-common{
+    width: 100%;
+    box-shadow: 10px 10px 20px  black;
+}
+.image-common:hover{
+    opacity: 0.5;
+ }
+ 
+/*section06*/
+#section06{
+    height: 1000px;
+}
+.contact{
+    position: relative;
+    width: 80%;
+    height: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.form{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+label{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+#userName,#email{
+    width: 300px;
+    height: 20px;
+    margin-bottom: 5%; 
+}
+#content{
+    width: 350px;
+    height: 150px;
+    margin-top: 10px;
+}
+.p-form__btn{
+    margin-top: 10%;
+}
+.form-btn{
+    width: 300px;
+    height: 60px;
+    border-radius: 25px;
+    border: none;  
+    background-image: linear-gradient(45deg, #709dff 0%, #b0c9ff 100%);
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.form-btn:hover{
+    background-image: linear-gradient(45deg, #709dff 50%, #b0c9ff 100%);
+}
+/*footer*/
+.footer{
+    height:60px;
+    padding-top: 20px;
+}
+.footer-left{
+    float: left;
+}
+.footer-right{
+    float: right;
+    padding-top: 40px;
+}
+.footer-left p{
+    margin-bottom: 8px;
+    color: #fff;
+}
+.footer-right p{
+    color: #fff;
+}
+/*他*/
+/*hover*/
+.top:hover{
+     opacity: 0.5;
+    transition: 0.5s;
+}
+.food:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.concept-card01:hover{
+     opacity: 0.5;
+    transition: 0.5s; 
+}
+.portfolio-site01:hover{
+     opacity: 0.5;
+    transition: 0.5s;  
+}
+.portfolio-site02:hover{
+     opacity: 0.5;
+    transition: 0.5s;    
+}
+
+
+
+
+/*レスポンシブ対応*/
+@media (min-width:320px) and (max-width: 1200px){
+
+}
+@media (max-width: 1500px){
+
+    #section01{
+        height: 1024px;
+      }
+      #section01 h1{
+          font-size: 6rem;
+      }
+      #section01 h2{
+          font-size: 4rem;    
+      }
+      
+   
+}
+@media (max-width: 1200px){
+    #section01{
+        height: 834px;
+      }
+    #section01 h1{
+        font-size: 4.3rem; 
+    }
+    #section01 h2{
+        font-size: 3.8rem;   
+    }
+    .food-professor{
+        width:20%;
+    }
+}
+@media (min-width:900px) and (max-width: 1025px){
+    
+    
+ 
+}
+@media (orientation:landscape) and 
+    (max-width:1025px){
+        #section01{
+            height: 768px;
+          }
+        #section01 h1{
+            font-size: 4rem; 
+        }
+        #section01 h2{
+            font-size: 3.5rem;   
+        }
+    }
+@media (max-width: 900px){
+    .icon{
+        width: 5%;
+    }
+    #section01{
+        height: 600px;
+      }
+    #section01 h1{
+        font-size: 3.5rem; 
+    }
+    #section01 h2{
+        font-size: 3rem;   
+    }
+}
+@media (orientation:landscape) and (max-width:900px){
+    .header{
+        height: 60px;
+    }
+    #section01{
+        height: 414px;
+      }
+    #section01 h1{
+        font-size: 3.5rem; 
+    }
+    #section01 h2{
+        font-size: 3rem;   
+    }
+    img[src="images/slider/IMG_00.jpg"]{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%,-65%);
+        width: 10%;  
+    }
+    .image-common{
+        width: 80%;
+    }
+}
+@media (max-width: 769px){
+    #section01{
+        height: 600px;
+      }
+    #section01 h1{
+        font-size: 3.5rem; 
+    }
+    #section01 h2{
+        font-size: 3rem;   
+    }
+    #section05{
+        height: 2800px;
+    }
+    .works-card1{
+        display: block;
+        width: 100%;
+    }
+    .works-card2{
+        display: block;
+        width: 100%;
+    }
+    .works-card3{
+        display: block;
+        width: 100%;
+    }
+    .works-card4{
+        display: block;
+        width: 100%;
+    }
+    .image-common{
+        width: 100%;
+    }
+   
+      
+}
+@media (orientation:landscape) and
+(max-width: 769px){
+    .section-title{
+         font-size: 3rem;
+     }
+    #section01{
+        height: 414px;
+      }
+    #section01 h1{
+        font-size: 3.5rem; 
+    }
+    #section01 h2{
+        font-size: 3rem;   
+    }
+    img[src="images/slider/IMG_00.jpg"]{
+        width: 15%;  
+    }
+       
+}
+@media (max-width: 700px){
+    .icon{
+        width: 7%;
+    }
+   
+} 
+@media (max-width: 599px){
+    #section01 h1{
+        font-size: 3rem;  
+    }
+    #section01 h2{
+        font-size: 2.5rem;   
+    } 
+    #section05{
+        height: 2700px;
+    }
+}
+@media (max-width: 481px){
+    .food-professor{
+        width:25%;
+    }
+   
+}
+@media (max-width: 416px){
+    .section-title{
+        font-size: 3rem;
+    }
+    .icon{
+        width: 10%;
+    }
+    .header{
+        height: 60px;
+    }
+    img[src="images/slider/IMG_00.jpg"]{
+        width: 23%;  
+    }
+    #ABOUT-text{
+        font-size: 1.6rem;
+    }
+    .Research-Activity-text{
+        font-size: 1.6rem;
+    }
+    .skill-point li{
+        font-size: 1.6rem; 
+    }
+    #section05{
+        height: 2600px;
+    }
+    .works-title{
+        font-size: 1.4rem;  
+    }
+    label{
+        font-size: 1.6rem; 
+    }
+    #userName,#email{
+        width: 60%;
+    }
+    #content{
+        width: 80%;
+    }
+    .form-btn{
+        width: 250px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+      
+
+}
+@media (max-width: 376px){
+    .section-title{
+        font-size: 2.7rem;
+    }
+    #section01{
+        height: 800px;
+      }
+    #section01 h1{
+        font-size: 2.8rem; 
+    }
+    #section01 h2{
+        font-size: 2.3rem;   
+    }
+    img[src="images/slider/IMG_00.jpg"]{
+        width: 25%;  
+    }
+    .image-common{
+        width: 90%;
+    }
+}
+@media (max-width: 321px){
+    #wrapper{
+        width: max-content;
+       }
+    .section-title{
+        font-size: 2.3rem;
+    }
+    #section01{
+        height: 480px;
+      }
+    #section01 h1{
+        font-size: 2.3rem; 
+    }
+    #section01 h2{
+        font-size: 1.8rem;   
+    }
+    #ABOUT-text{
+        font-size: 1.4rem;
+    }
+    .Research-Activity-text{
+        font-size: 1.4rem;
+    }
+    .skill-point li{
+        font-size: 1.4rem; 
+    }
+    .image-common{
+        width: 80%;
+    }
+    .works-title{
+        font-size: 1.2rem;  
+    }
+    label{
+        font-size: 1.4rem; 
+    }
+    .form-btn{
+        width: 230px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
