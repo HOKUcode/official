@@ -163,23 +163,103 @@ img[src="images/slider/IMG_00.jpg"]{
 /*sectin03*/
 #section03{
     position: relative;
-    height: 500px;
+    height: 2400px;
 }
-.Research-Activity-text{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-30%);
-    width: 80%;
+#section03 h3{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+#section03 p{
+    font-size: 1.5rem;
+}
+.text-parts-color{
     font-size: 1.8rem;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #cfff70 0%,#e7ff70 5%,#70ffc8 60%, #2457e3 100%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
-.food-professor{
+
+
+.service-image1{
+position: absolute;
+top: 20%;
+right: 5%;
+transform: translate(-5%,-20%);
+width: 35%;
+}
+
+.service-text1{
     position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%,-75%);
-    width:15%;
+    top: 25%;
+    left: 10%;
+    transform: translate(-10%,-25%);
+    width: 40%;
+    text-align: center;
 }
+
+.service-image2{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    transform: translate(-5%,-55%);
+    width:35%;
+}
+
+.service-text2{
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    transform: translate(-10%,-60%);
+    width: 40%;
+    text-align: center;
+}
+.service-image3{
+    position: absolute;
+    top: 85%;
+    right: 5%;
+    transform: translate(-5%,-85%);
+    width: 35%;
+}
+.service-text3{
+    position: relative;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-10%,-90%);
+    width: 40%;
+    text-align: center;
+}
+.btn-more{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-0%);
+    position: relative;
+    width: 300px;
+    height: 60px;
+    margin-top: 5rem;
+    color: #ffffff;
+    border-radius: 25px;
+    border: none;  
+    background-image: linear-gradient(45deg, #709dff 0%, #b0c9ff 100%);
+}
+.btn-more:hover{
+    background-image: linear-gradient(45deg, #709dff 50%, #b0c9ff 100%);
+}
+.btn-more span{
+    display: flex;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.fa-window-restore{
+    font-size: 1.5rem;
+}
+
+
 /*section04*/
 #section04{
     position: relative;
@@ -328,10 +408,6 @@ label{
      opacity: 0.5;
     transition: 0.5s;
 }
-.food:hover{
-    opacity: 0.5;
-    transition: 0.5s;
-}
 .concept-card01:hover{
      opacity: 0.5;
     transition: 0.5s; 
@@ -376,12 +452,14 @@ label{
     #section01 h2{
         font-size: 3.8rem;   
     }
-    .food-professor{
-        width:20%;
+    #section03 h3{
+        font-size: 3rem;
     }
 }
 @media (min-width:900px) and (max-width: 1025px){
-    
+    #section03 h3{
+        font-size: 2.8rem;
+    }
     
  
 }
@@ -395,6 +473,9 @@ label{
         }
         #section01 h2{
             font-size: 3.5rem;   
+        }
+        #section03 h3{
+            font-size: 2.8rem;
         }
     }
 @media (max-width: 900px){
@@ -410,6 +491,58 @@ label{
     #section01 h2{
         font-size: 3rem;   
     }
+    #section03{
+        height: 3200px;
+    }
+    .service-image1{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-10%);
+        width: 60%;
+        }
+        
+        .service-text1{
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%,-25%);
+            width: 80%;
+            text-align: center;
+        }
+        
+        .service-image2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width:60%;
+        }
+        
+        .service-text2{
+            position: absolute;
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%,-62%);
+            width: 80%;
+            text-align: center;
+        }
+        .service-image3{
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%,-85%);
+            width: 60%;
+        }
+        .service-text3{
+            position: relative;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,-100%);
+            width: 80%;
+            text-align: center;
+        }
 }
 @media (orientation:landscape) and (max-width:900px){
     .header{
@@ -433,6 +566,9 @@ label{
     }
     .image-common{
         width: 80%;
+    }
+    #section03 h3{
+        font-size: 2.5rem;
     }
 }
 @media (max-width: 769px){
@@ -487,6 +623,29 @@ label{
     img[src="images/slider/IMG_00.jpg"]{
         width: 15%;  
     }
+    #section03{
+        height: 3000px;
+    }
+    .service-image1{
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%,-12%);
+        }
+     
+        .service-image2{
+            position: absolute;
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%,-52%);
+        }
+        .service-image3{
+            position: absolute;
+            top: 84%;
+            left: 50%;
+            transform: translate(-50%,-84%);
+        }
+           
        
 }
 @media (max-width: 700px){
@@ -505,12 +664,41 @@ label{
     #section05{
         height: 2700px;
     }
+    #section03{
+        height: 2800px;
+    }
 }
 @media (max-width: 481px){
-    .food-professor{
-        width:25%;
+    #section03 h3{
+        font-size: 2rem;
     }
-   
+    #section03 p{
+        font-size: 1.5rem;
+    }
+    .text-parts-color{
+        font-size: 1.7rem;
+    }
+    .service-image1{
+        position: absolute;
+        top: 14%;
+        left: 50%;
+        transform: translate(-50%,-14%);
+        }
+       
+        .service-image2{
+            position: absolute;
+            top: 51%;
+            left: 50%;
+            transform: translate(-50%,-51%);
+        }
+       
+        .service-image3{
+            position: absolute;
+            top: 82%;
+            left: 50%;
+            transform: translate(-50%,-82%);
+        }
+        
 }
 @media (max-width: 416px){
     .section-title{
@@ -528,7 +716,7 @@ label{
     #ABOUT-text{
         font-size: 1.6rem;
     }
-    .Research-Activity-text{
+    .Service-text{
         font-size: 1.6rem;
     }
     .skill-point li{
@@ -554,7 +742,12 @@ label{
         height: 60px;
         font-size: 1.8rem;
     }
-      
+    .service-image3{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-80%);
+    }
 
 }
 @media (max-width: 376px){
@@ -576,6 +769,30 @@ label{
     .image-common{
         width: 90%;
     }
+    #section03 p{
+        font-size: 1.2rem;
+    }
+    .text-parts-color{
+        font-size: 1.5rem;
+    }
+    .service-image1{
+        width: 80%;
+        }
+       
+        .service-image2{
+            position: absolute;
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%,-52%);
+            width: 80%;
+        }
+    .service-image3{
+        position: absolute;
+        top: 84%;
+        left: 50%;
+        transform: translate(-50%,-84%);
+        width: 80%;
+    }
 }
 @media (max-width: 321px){
     #wrapper{
@@ -596,7 +813,10 @@ label{
     #ABOUT-text{
         font-size: 1.4rem;
     }
-    .Research-Activity-text{
+    #section03 h3{
+        font-size: 1.6rem;
+    }
+    .Service-text{
         font-size: 1.4rem;
     }
     .skill-point li{
