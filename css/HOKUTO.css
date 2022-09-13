@@ -6,13 +6,10 @@
 html{
     font-size: 62.5%;
 }
-@font-face {
-	font-family: "Harenosora";
-	src: url("Harenosora.woff") ;
-}
+
 
 body {
-    font-family:"Harenosora","游明朝","游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
+    font-family:"游明朝","Yu MIncho","游明朝体","YuMincho","游ゴシック体","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
     color: #fff;
 }
  video{
